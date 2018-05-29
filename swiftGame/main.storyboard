@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="1T2-YP-h2l">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="bBO-11-XAC">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="1T2-YP-h2l" customClass="ViewController" customModule="swiftGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RcZ-9p-aWR"/>
+                        <viewControllerLayoutGuide type="bottom" id="e6U-4M-VqX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="X3z-oc-fM2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="4JW-Dw-gK5">
+                                <rect key="frame" x="20" y="40" width="335" height="335"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Jr5-eF-wc8">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="59"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cMU-tN-aTf">
+                                                <rect key="frame" x="0.0" y="0.0" width="59" height="59"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <connections>
+                                                    <action selector="lightUp:" destination="1T2-YP-h2l" eventType="touchUpInside" id="oPE-ua-vd5"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nla-6V-3F2">
+                                                <rect key="frame" x="69" y="0.0" width="59" height="59"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <connections>
+                                                    <action selector="lightUp:" destination="1T2-YP-h2l" eventType="touchUpInside" id="xtR-jn-sFv"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="81K-8B-WjZ">
+                                                <rect key="frame" x="138" y="0.0" width="59" height="59"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <connections>
+                                                    <action selector="lightUp:" destination="1T2-YP-h2l" eventType="touchUpInside" id="EnW-8z-Bdg"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZgT-xp-7yy">
+                                                <rect key="frame" x="207" y="0.0" width="59" height="59"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <connections>
+                                                    <action selector="lightUp:" destination="1T2-YP-h2l" eventType="touchUpInside" id="24d-LM-019"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r4F-hJ-HpP">
+                                                <rect key="frame" x="276" y="0.0" width="59" height="59"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <connections>
+                                                    <action selector="lightUp:" destination="1T2-YP-h2l" eventType="touchUpInside" id="bed-Mm-itV"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Dox-zg-LHc">
+                                        <rect key="frame" x="0.0" y="69" width="335" height="59"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zPo-dS-WZj">
+                                                <rect key="frame" x="0.0" y="0.0" width="59" height="59"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <connections>
+                                                    <action selector="lightUp:" destination="1T2-YP-h2l" eventType="touchUpInside" id="Oi2-wL-QCV"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uvP-Kf-SCg">
+                                                <rect key="frame" x="69" y="0.0" width="59" height="59"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <connections>
+                                                    <action selector="lightUp:" destination="1T2-YP-h2l" eventType="touchUpInside" id="o1v-Zl-o1E"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jjf-kC-64z">
+                                                <rect key="frame" x="138" y="0.0" width="59" height="59"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <connections>
+                                                    <action selector="lightUp:" destination="1T2-YP-h2l" eventType="touchUpInside" id="BjW-iG-QbZ"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sqR-8E-cOw">
+                                                <rect key="frame" x="207" y="0.0" width="59" height="59"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <connections>
+                                                    <action selector="lightUp:" destination="1T2-YP-h2l" eventType="touchUpInside" id="BSR-qz-Crs"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="haO-0T-0qv">
+                                                <rect key="frame" x="276" y="0.0" width="59" height="59"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <connections>
+                                                    <action selector="lightUp:" destination="1T2-YP-h2l" eventType="touchUpInside" id="fl3-Bc-4QJ"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="gJl-ow-ld8">
+                                        <rect key="frame" x="0.0" y="138" width="335" height="59"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5MC-sm-EhA">
+                                                <rect key="frame" x="0.0" y="0.0" width="59" height="59"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <connections>
+                                                    <action selector="lightUp:" destination="1T2-YP-h2l" eventType="touchUpInside" id="Why-HW-2ix"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ujq-Ys-03m">
+                                                <rect key="frame" x="69" y="0.0" width="59" height="59"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <connections>
+                                                    <action selector="lightUp:" destination="1T2-YP-h2l" eventType="touchUpInside" id="083-qW-fSd"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qKs-9L-uIu">
+                                                <rect key="frame" x="138" y="0.0" width="59" height="59"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <connections>
+                                                    <action selector="lightUp:" destination="1T2-YP-h2l" eventType="touchUpInside" id="c3f-ul-Nqc"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uXm-7x-Kiv">
+                                                <rect key="frame" x="207" y="0.0" width="59" height="59"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <connections>
+                                                    <action selector="lightUp:" destination="1T2-YP-h2l" eventType="touchUpInside" id="4mM-mW-MDv"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L1u-bC-r9B">
+                                                <rect key="frame" x="276" y="0.0" width="59" height="59"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <connections>
+                                                    <action selector="lightUp:" destination="1T2-YP-h2l" eventType="touchUpInside" id="eIK-Ts-SoB"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="wC4-qt-Qfl">
+                                        <rect key="frame" x="0.0" y="207" width="335" height="59"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GrR-dF-HUW">
+                                                <rect key="frame" x="0.0" y="0.0" width="59" height="59"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <connections>
+                                                    <action selector="lightUp:" destination="1T2-YP-h2l" eventType="touchUpInside" id="ZCJ-JB-kWG"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xv0-wc-fQD">
+                                                <rect key="frame" x="69" y="0.0" width="59" height="59"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <connections>
+                                                    <action selector="lightUp:" destination="1T2-YP-h2l" eventType="touchUpInside" id="nsf-hr-iRo"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d3k-qR-a9a">
+                                                <rect key="frame" x="138" y="0.0" width="59" height="59"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <connections>
+                                                    <action selector="lightUp:" destination="1T2-YP-h2l" eventType="touchUpInside" id="J9x-9u-3o5"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BOa-hB-TXz">
+                                                <rect key="frame" x="207" y="0.0" width="59" height="59"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <connections>
+                                                    <action selector="lightUp:" destination="1T2-YP-h2l" eventType="touchUpInside" id="0OL-0j-6CK"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5pl-Tx-uGd">
+                                                <rect key="frame" x="276" y="0.0" width="59" height="59"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <connections>
+                                                    <action selector="lightUp:" destination="1T2-YP-h2l" eventType="touchUpInside" id="RIc-OD-Qii"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="WgF-YV-Sc2">
+                                        <rect key="frame" x="0.0" y="276" width="335" height="59"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="97v-SL-eeF">
+                                                <rect key="frame" x="0.0" y="0.0" width="59" height="59"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <connections>
+                                                    <action selector="lightUp:" destination="1T2-YP-h2l" eventType="touchUpInside" id="hVn-ge-Pc7"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ye-ZK-Dib">
+                                                <rect key="frame" x="69" y="0.0" width="59" height="59"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <connections>
+                                                    <action selector="lightUp:" destination="1T2-YP-h2l" eventType="touchUpInside" id="aJr-eh-Qac"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MXq-um-j5M">
+                                                <rect key="frame" x="138" y="0.0" width="59" height="59"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <connections>
+                                                    <action selector="lightUp:" destination="1T2-YP-h2l" eventType="touchUpInside" id="Kzh-yB-ujB"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xVc-mg-B4y">
+                                                <rect key="frame" x="207" y="0.0" width="59" height="59"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <connections>
+                                                    <action selector="lightUp:" destination="1T2-YP-h2l" eventType="touchUpInside" id="Ecn-jJ-FfX"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fUo-R5-x27">
+                                                <rect key="frame" x="276" y="0.0" width="59" height="59"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <connections>
+                                                    <action selector="lightUp:" destination="1T2-YP-h2l" eventType="touchUpInside" id="UcT-xc-ng1"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="4JW-Dw-gK5" secondAttribute="height" multiplier="1:1" id="5X8-lo-bgk"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="07p-xb-aOn">
+                                <rect key="frame" x="162.5" y="385" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Owh-yh-RLA"/>
+                                </constraints>
+                                <state key="normal" title="Restart"/>
+                                <connections>
+                                    <action selector="restart:" destination="1T2-YP-h2l" eventType="touchUpInside" id="x9B-nf-KPP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="4JW-Dw-gK5" firstAttribute="leading" secondItem="X3z-oc-fM2" secondAttribute="leading" constant="20" id="1mN-7h-VZi"/>
+                            <constraint firstItem="07p-xb-aOn" firstAttribute="centerX" secondItem="X3z-oc-fM2" secondAttribute="centerX" id="GXl-tO-iFd"/>
+                            <constraint firstItem="4JW-Dw-gK5" firstAttribute="top" secondItem="RcZ-9p-aWR" secondAttribute="bottom" constant="20" id="JkC-vh-VJv"/>
+                            <constraint firstAttribute="trailing" secondItem="4JW-Dw-gK5" secondAttribute="trailing" constant="20" id="RpE-X2-sVX"/>
+                            <constraint firstItem="07p-xb-aOn" firstAttribute="top" secondItem="4JW-Dw-gK5" secondAttribute="bottom" constant="10" id="aNV-oH-L6r"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outletCollection property="lights" destination="cMU-tN-aTf" collectionClass="NSMutableArray" id="MvN-Tu-cbq"/>
+                        <outletCollection property="lights" destination="nla-6V-3F2" collectionClass="NSMutableArray" id="ZZb-6e-NvL"/>
+                        <outletCollection property="lights" destination="81K-8B-WjZ" collectionClass="NSMutableArray" id="oXJ-nL-VBD"/>
+                        <outletCollection property="lights" destination="ZgT-xp-7yy" collectionClass="NSMutableArray" id="21b-px-TYC"/>
+                        <outletCollection property="lights" destination="r4F-hJ-HpP" collectionClass="NSMutableArray" id="xWv-yj-Yd0"/>
+                        <outletCollection property="lights" destination="zPo-dS-WZj" collectionClass="NSMutableArray" id="kUT-WL-KOj"/>
+                        <outletCollection property="lights" destination="uvP-Kf-SCg" collectionClass="NSMutableArray" id="YOg-qw-97J"/>
+                        <outletCollection property="lights" destination="Jjf-kC-64z" collectionClass="NSMutableArray" id="6Qv-qD-g4U"/>
+                        <outletCollection property="lights" destination="sqR-8E-cOw" collectionClass="NSMutableArray" id="DSo-V2-FP2"/>
+                        <outletCollection property="lights" destination="haO-0T-0qv" collectionClass="NSMutableArray" id="saO-Pt-HNv"/>
+                        <outletCollection property="lights" destination="5MC-sm-EhA" collectionClass="NSMutableArray" id="Nyh-ea-hCA"/>
+                        <outletCollection property="lights" destination="Ujq-Ys-03m" collectionClass="NSMutableArray" id="3y3-h6-GQx"/>
+                        <outletCollection property="lights" destination="qKs-9L-uIu" collectionClass="NSMutableArray" id="UKT-rI-r28"/>
+                        <outletCollection property="lights" destination="uXm-7x-Kiv" collectionClass="NSMutableArray" id="vsF-iZ-bye"/>
+                        <outletCollection property="lights" destination="L1u-bC-r9B" collectionClass="NSMutableArray" id="59t-xX-XtA"/>
+                        <outletCollection property="lights" destination="GrR-dF-HUW" collectionClass="NSMutableArray" id="a4c-3L-Ggb"/>
+                        <outletCollection property="lights" destination="Xv0-wc-fQD" collectionClass="NSMutableArray" id="zTW-da-Kxt"/>
+                        <outletCollection property="lights" destination="d3k-qR-a9a" collectionClass="NSMutableArray" id="uVy-OP-jfE"/>
+                        <outletCollection property="lights" destination="BOa-hB-TXz" collectionClass="NSMutableArray" id="mkb-bH-e5u"/>
+                        <outletCollection property="lights" destination="5pl-Tx-uGd" collectionClass="NSMutableArray" id="A9c-kL-itY"/>
+                        <outletCollection property="lights" destination="97v-SL-eeF" collectionClass="NSMutableArray" id="cq3-Yy-Bca"/>
+                        <outletCollection property="lights" destination="3ye-ZK-Dib" collectionClass="NSMutableArray" id="tAP-Hi-tFY"/>
+                        <outletCollection property="lights" destination="MXq-um-j5M" collectionClass="NSMutableArray" id="FaB-Uy-brU"/>
+                        <outletCollection property="lights" destination="xVc-mg-B4y" collectionClass="NSMutableArray" id="xOG-fz-ORr"/>
+                        <outletCollection property="lights" destination="fUo-R5-x27" collectionClass="NSMutableArray" id="ZRw-Wy-nQI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a55-cK-gIv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="129" y="77"/>
+        </scene>
+    </scenes>
+</document>
