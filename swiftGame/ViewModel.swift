@@ -1,5 +1,5 @@
 //
-//  model.swift
+//  ViewModel.swift
 //  swiftGame
 //
 //  Created by xiaobei on 2018/5/28.
