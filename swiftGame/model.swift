@@ -57,7 +57,7 @@ struct LightSwitch {
         self.puzzles = [[Int]](repeating: [Int](repeating: 0, count: matrix.columns + 2), count: matrix.rows + 2)
         self.press = [[Int]](repeating: [Int](repeating: 0, count: matrix.columns + 2), count: matrix.rows + 2)
         
-        setupLightStatus()
+        self.setupLightStatus()
         
         enumerate()
         
@@ -85,6 +85,7 @@ extension LightSwitch {
     
     mutating private func setupLightStatus() {
         
+        self.lights.removeAll()
         for r in 1..<matrix.rows + 1 {
             for c in 1..<matrix.columns + 1 {
                 puzzles[r][c] = 2.arc4random
@@ -95,13 +96,8 @@ extension LightSwitch {
     
     /// 计算结果，枚举第一行的所有可能
     mutating private func enumerate() {
+        
         var c = 1
-        
-        // 将答案数组的第一行全部都置为 0
-        for c in 1..<matrix.columns {
-            press[1][c] = 0
-        }
-        
         while !guess() {
             press[1][1] += 1
             c = 1
@@ -112,6 +108,7 @@ extension LightSwitch {
                 if c >= matrix.columns {
                     
                     // 当没有解的时候，重新生成灯数
+                    press[1][c] = 1 // 最后一位置为 1
                     print("重新生成灯数")
                     self.setupLightStatus()
                     self.enumerate()
