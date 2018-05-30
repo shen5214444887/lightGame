@@ -57,8 +57,8 @@ private extension ViewController {
     func setupUI() {
         
         for light in self.lights {
-            light.setBackgroundImage(UIColor.black.toImage, for: [])
-            light.setBackgroundImage(UIColor.yellow.toImage, for: .selected)
+            light.setBackgroundImage(UIColor.yellow.toImage, for: [])
+            light.setBackgroundImage(UIColor.black.toImage, for: .selected)
         }
     }
 }
