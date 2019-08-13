@@ -26,7 +26,6 @@
 		0B75967D20BBE296007564C1 /* main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = main.storyboard; sourceTree = "<group>"; };
 		0B75967F20BBE6AC007564C1 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		0B75968120BBEDA9007564C1 /* SSExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSExtension.swift; sourceTree = "<group>"; };
-		0BFC02F12302838000BCA520 /* 1565674385347272.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 1565674385347272.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,20 +63,11 @@
 				0B75968120BBEDA9007564C1 /* SSExtension.swift */,
 				0B75967F20BBE6AC007564C1 /* ViewModel.swift */,
 				0B75967D20BBE296007564C1 /* main.storyboard */,
-				0BFC02F02302834E00BCA520 /* Assets */,
 				0B75967220BBE26F007564C1 /* Assets.xcassets */,
 				0B75967420BBE26F007564C1 /* LaunchScreen.storyboard */,
 				0B75967720BBE26F007564C1 /* Info.plist */,
 			);
 			path = swiftGame;
-			sourceTree = "<group>";
-		};
-		0BFC02F02302834E00BCA520 /* Assets */ = {
-			isa = PBXGroup;
-			children = (
-				0BFC02F12302838000BCA520 /* 1565674385347272.mp4 */,
-			);
-			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
